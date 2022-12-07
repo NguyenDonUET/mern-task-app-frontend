@@ -1,11 +1,10 @@
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
+import { URL } from '../App'
+import loadImage from '../assets/loader.gif'
 import Task from './Task'
 import TaskForm from './TaskForm'
-import axios from 'axios'
-import { URL } from '../App'
-import { get } from 'mongoose'
-import loadImage from '../assets/loader.gif'
 
 const TaskList = () => {
    const [formData, setFormData] = useState({
